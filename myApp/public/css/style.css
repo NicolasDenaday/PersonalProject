@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body{
+    background-image: url(../img/mountains-3959204.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1px);
+    height: 100vh;
+}
+
+/* HEADER */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.navbar a {
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: black
+}
+/* HEADER */
+
+/* Central Text */
+.mainText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9rem 9rem 0.5rem 10rem;
+    padding-left: 2rem;
+    padding-top: 4rem;
+}
+
+.mainText p {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 3.2rem;
+    color:rgb(255, 255, 255)
+}
+/* Central Text */
+
+/* Central Text ANIMATIONS */
+
+.mainText p {
+    animation: animated-text 2.5s steps(30)
+    1s 1 normal both,
+    animated-cursor 5s steps(30)
+    infinite normal;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 430px;}
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: rgba(255, 255, 255, .70);}
+    to{border-right-color: transparent;}
+}
+
+/* Central Text ANIMATIONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
